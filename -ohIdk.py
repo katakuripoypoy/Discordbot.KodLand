@@ -1,6 +1,6 @@
 import discord 
 from discord.ext import commands
-from python.challange import tas_kagit_makas
+
 import random
 
 intents = discord.Intents.default()
@@ -16,16 +16,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    #if message.content.startswith('The_Fraud/merhaba'):
-        #await message.channel.send("Selam")
-    #elif message.content.startswith('$bye'):
-        #await message.channel.send("\U0001f642")
-    #elif message.content.startswith("$The_Fraud/challage"):
-        #await message.channel.send(tas_kagit_makas())
-    #elif message.content.startswith("$The_Fraud/ReNewable_Energy"):
-        #await message.channel.send("Interesting... renewable energy is essential!")
-    #else:
-        #await message.channel.send(message.content)
+    
 
     await bot.process_commands(message)
 
